@@ -1,0 +1,178 @@
+p { font-size: 20px }
+.texto1 {font-size: 20px}
+p.texto2 {font-size: 20px}
+p[name] {font-size: 30px}
+p[name="mitexto"] {font-size: 30px}
+p.texto2 {background: #999999}
+/*
+p[name^=”mi”] { font-size: 20px }  comenzado en mi : micasa mitexto
+p[name$=”mi”] { font-size: 20px }	 finalizado en mi : casimi textomi
+p[name*=”mi”] { font-size: 20px }	que contiene mi : textomicasa
+
+p:nth-child(2){
+ background: #999999;
+} 
+p:nth-child(4){
+ background: #999999;
+} 
+*{
+ margin: 0px; evita darle fondo a los elentos p de px =0 como espacios en blancos
+}
+p:nth-child(odd){ fondo para impares 
+ background: #999999;
+}
+p:nth-child(even){ fondo para pares 
+ background: #CCCCCC;
+} 
+p:last-child{ solo ultimo hijo firts primero  only si es uno solo
+ background: #999999; 
+ }
+} 
+:not (.mitexto2){ para dar margen a todos menos a una class o elementos especificos
+	margin: 0px;
+}
+*/
+* {
+	margin: 5px;
+	padding: 5px;
+}
+@font-face {
+ font-family: 'MiNuevaFuente';
+ src: url('FetteThannhaeuser.ttf');
+}
+@font-face {
+ font-family: 'MiNuevaFuente2';
+ src: url('LibreBaskerville-Italic.ttf');
+}
+* {
+font : bold 20px MiNuevaFuente2, sans-serif;
+}
+h1 {
+ font: bold 50px MiNuevaFuente2, sans-serif;
+}
+h2 {
+ font: bold 14px , sans-serif;
+}
+header, section, footer, aside, nav, article, figure, figcaption,
+hgroup{
+ display: block;
+} 
+body {
+ text-align: center;
+} 
+#agrupar {
+ width: 960px;
+ margin: 15px auto;
+ text-align: left;
+
+  -moz-border-radius: 20px;
+ -webkit-border-radius: 20px;
+ border-radius: 20px;
+ -moz-box-shadow: rgb(150,150,150) 5px 5px;
+ -webkit-box-shadow: rgb(150,150,150) 5px 5px;
+ box-shadow: rgb(150,150,150) 5px 5px; 
+}
+#cabecera {
+ background: #5F6F52;
+ border: 1px solid #999999;
+ padding: 20px;
+ font: bold 40px MiNuevaFuente, sans-serif;
+ -moz-box-shadow: rgb(150,150,150) 5px 5px;
+ -webkit-box-shadow: rgb(150,150,150) 5px 5px;
+ box-shadow: rgb(150,150,150) 5px 5px; 
+ -moz-border-radius: 20px;
+ -webkit-border-radius: 20px;
+ border-radius: 20px;
+ text-shadow: rgb(0,0,150) 3px 3px 5px; 
+
+} 
+#menu {
+ background: #A9B388;
+ padding: 5px 15px;
+
+-moz-box-shadow: rgb(150,150,150) 5px 5px;
+ -webkit-box-shadow: rgb(150,150,150) 5px 5px;
+ box-shadow: rgb(150,150,150) 5px 5px; 
+ -moz-border-radius: 20px;
+ -webkit-border-radius: 20px;
+ border-radius: 20px;
+}
+#menu li {
+ display: inline-block;
+ list-style: none;
+ padding: 5px;
+ font: bold 14px , sans-serif;
+ -moz-box-shadow: rgb(150,150,150) 5px 5px;
+ -webkit-box-shadow: rgb(150,150,150) 5px 5px;
+ box-shadow: rgb(150,150,150) 5px 5px; 
+ -moz-border-radius: 20px;
+ -webkit-border-radius: 20px;
+ border-radius: 20px;
+}
+#columna {
+ float: left;
+ width: 150px;
+ margin:	10px 0px;
+ padding: 10px;
+ background: #CCCCCC;
+
+ -moz-border-radius: 20px;
+ -webkit-border-radius: 20px;
+ border-radius: 20px;
+ -moz-box-shadow: rgb(150,150,150) 5px 5px;
+ -webkit-box-shadow: rgb(150,150,150) 5px 5px;
+ box-shadow: rgb(150,150,150) 5px 5px; 
+}
+#seccion {
+	float: left;
+ width: 660px;
+ margin: 20px;
+}
+#pie {
+ clear: both;	
+ text-align: center;
+ padding: 20px;
+ border-top: 2px solid #999999;
+
+ -moz-border-radius: 20px;
+ -webkit-border-radius: 20px;
+ border-radius: 20px;
+  -moz-box-shadow: rgb(150,150,150) 5px 5px;
+ -webkit-box-shadow: rgb(150,150,150) 5px 5px;
+ box-shadow: rgb(150,150,150) 5px 5px; 
+}
+article {
+ background: #F9EBC7;
+ border: 1px solid #999999;
+ padding: 20px;
+ margin-bottom: 15px;
+font : bold 20px MiNuevaFuente ,sans-serif;
+ -moz-border-radius: 20px;
+ -webkit-border-radius: 20px;
+ border-radius: 20px;
+  -moz-box-shadow: rgb(150,150,150) 5px 5px;
+ -webkit-box-shadow: rgb(150,150,150) 5px 5px;
+ box-shadow: rgb(150,150,150) 5px 5px; 
+}
+article footer {
+ text-align: right;
+}
+time {
+ color: #999999;
+}
+figcaption {
+ font: italic 14px , sans-serif;
+} 
+div {
+ width: 500px;
+ margin: 20px;
+ padding: 10px;
+ border: 1px solid #000000;
+ -moz-box-shadow: rgb(150,150,150) 5px 5px;
+ -webkit-box-shadow: rgb(150,150,150) 5px 5px;
+ box-shadow: rgb(150,150,150) 5px 5px; 
+ -moz-box-sizing: border-box;
+ -webkit-box-sizing: border-box;
+ box-sizing: border-box;
+ box-shadow: rgb(150,150,150) 5px 5px 10px inset; 
+} 
